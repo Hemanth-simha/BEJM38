@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>WebApp</display-name>
+  <welcome-file-list>
+  	<welcome-file>date</welcome-file>
+  	<welcome-file>CurrentDate.html</welcome-file>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  <servlet-name>MyFirstServlet</servlet-name>
+  <servlet-class>com.jspiders.webapp.first.MyFirstServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>MyFirstServlet</servlet-name>
+  <url-pattern>/date</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>MyRequestServlet</servlet-name>
+  <servlet-class>com.jspiders.webapp.first.MyRequestServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>MyRequestServlet</servlet-name>
+  <url-pattern>/request</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  <servlet-name>MySecondServlet</servlet-name>
+  <servlet-class>com.jspiders.webapp.first.MySecondServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>MySecondServlet</servlet-name>
+  <url-pattern>/second</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>CreateCookieServlet</servlet-name>
+  <servlet-class>com.jspiders.webapp.first.CreateCookieServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>CreateCookieServlet</servlet-name>
+  <url-pattern>/createCookie</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>ReadCookieServlet</servlet-name>
+  <servlet-class>com.jspiders.webapp.first.ReadCookieServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>ReadCookieServlet</servlet-name>
+  <url-pattern>/readCookie</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>MyServletJdbc</servlet-name>
+  <servlet-class>com.jspiders.webapp.first.MyServletJdbc</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>MyServletJdbc</servlet-name>
+  <url-pattern>/servletJdbc</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>MyRedirectServlet</servlet-name>
+  <servlet-class>com.jspiders.webapp.first.MyRedirectServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>MyRedirectServlet</servlet-name>
+  <url-pattern>/redirect</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>MyForwardServlet</servlet-name>
+  <servlet-class>com.jspiders.webapp.first.MyForwardServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>MyForwardServlet</servlet-name>
+  <url-pattern>/forward</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>MyIncludeServlet</servlet-name>
+  <servlet-class>com.jspiders.webapp.first.MyIncludeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>MyIncludeServlet</servlet-name>
+  <url-pattern>/include</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>Servlet1</servlet-name>
+  <servlet-class>com.jspiders.webapp.first.Servlet1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Servlet1</servlet-name>
+  <url-pattern>/servlet1</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>Servlet2</servlet-name>
+  <servlet-class>com.jspiders.webapp.first.Servlet2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Servlet2</servlet-name>
+  <url-pattern>/servlet2</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
