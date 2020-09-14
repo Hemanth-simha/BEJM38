@@ -18,8 +18,18 @@ public class MyFirstServlet extends HttpServlet implements SingleThreadModel{
 		
 		Date date = new Date();
 		PrintWriter out = resp.getWriter();
-		//resp.setHeader("refresh","1");
-		out.println("Current Date and Time : "+date);
+		
+		String htmlres = "<html>"
+				+ "<head>"
+				+ "<title>"
+				+ "Current Date and Time"
+				+ "</title>"
+				+ "</head>"
+				+ "<body text=\"blue\">"
+				+ date
+				+ "</body>"
+				+ "</html>";
+		out.println(htmlres);
 		resp.setContentType("text/html");
 	}
 }

@@ -112,4 +112,41 @@
   <url-pattern>/servlet2</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+  <servlet-name>MyFirstJsp</servlet-name>
+  <jsp-file>/MyFirstJsp.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>MyFirstJsp</servlet-name>
+  <url-pattern>/dateJsp</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  <servlet-name>MySecondJsp</servlet-name>
+  <jsp-file>/MySecondJsp.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>MySecondJsp</servlet-name>
+  <url-pattern>/secondJsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>MyThirdJsp</servlet-name>
+  <jsp-file>/MyThirdJsp.jsp</jsp-file>
+  <init-param>
+  <param-name>Class</param-name>
+  <param-value>J2EE</param-value>
+  </init-param>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>MyThirdJsp</servlet-name>
+  <url-pattern>/thirdJsp</url-pattern>
+  </servlet-mapping>
+  
+  <context-param>
+  <param-name>API</param-name>
+  <param-value>JSP</param-value>
+  </context-param>
+  
 </web-app>
